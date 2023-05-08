@@ -1,7 +1,51 @@
 <html>
 
+<head>
+    <style>
+        .item{
+            background-color: aqua;
+            border: 2px solid grey;
+            
+        }
+    .grid-cotainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "head head"
+                              "lefts rights";
+    }
+    .item01{
+        grid-area: head;
+    }
+    .item02{
+        grid-area: lefts;
+    }
+
+    .item03{
+        grid-area: rights;
+    }
+
+    </style>
+</head>
+
+
 <body>
-    Hello world new
-    hello
+   
+   
+<div class="grid-cotainer">
+
+    <div class="item item01">
+        01
+    </div>
+
+    <div class="item item02">
+        02
+    </div>
+
+    <div class="item item03">
+        03
+    </div>
+
+</div>
+
 </body>
 </html>
